@@ -20,8 +20,15 @@
     "module": "ES2022",
     "lib": [
       "ES2022",
-      "dom"
-    ]
+      "dom",
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "@core/*":["src/app/core/*"],
+      "@features/*":["src/app/features/*"],
+      "@authentication/*":["src/app/core/authentication/*"],
+      "@environments/*":["src/environments/*"],
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
