@@ -1,0 +1,109 @@
+$dark-primary-text: rgba(black, 0.87);
+$dark-secondary-text: #84818A;
+$light-primary-text: #FFFF;
+
+$background-primary: #E9F1F4;
+$background-secondary: #DCDBDD;
+
+$primary-palette: (
+  50: #e0f4f3,
+  100: #b2e0e0,
+  200: #7cdcdb,
+  300: #4cc6d6,
+  400: #26b8d1,
+  500: #33a3aa,
+  600: #2d8d95,
+  700: #27787f,
+  800: #226671,
+  900: #1b4d59,
+  A100: #80d1c6,
+  A200: #4dbfb8,
+  A400: #26a69a,
+  A700: #00897b,
+);
+
+$accent-palette: (
+  50: #f0f6f9,
+  100: #d0e0e7,
+  200: #b0cad1,
+  300: #90b4b9,
+  400: #7a9ca2,
+  500: #5c8b8a,
+  600: #537f7d,
+  700: #4a7372,
+  800: #416765,
+  900: #2e4a4a,
+  A100: #d0e0e7,
+  A200: #b0cad1,
+  A400: #8a9c9f,
+  A700: #637374,
+);
+
+$success-palette: (
+  50: #EBF8F9,
+  100: #b3d9b3,
+  200: #80c280,
+  300: #4db84d,
+  400: #33a233,
+  500: #539b5b,
+  600: #4a8a50,
+  700: #418041,
+  800: #357a36,
+  900: #1d4d1d,
+  A100: #80e27f,
+  A200: #66d14f,
+  A400: #4caf50,
+  A700: #388e3c,
+);
+
+$warning-palette: (
+  50: #FFFACD,
+  100: #fef0b3,
+  200: #fdea80,
+  300: #fddc4a,
+  400: #fcd91f,
+  500: #fcdc57,
+  600: #f8c045,
+  700: #f4a832,
+  800: #f0941b,
+  900: #e07e00,
+  A100: #fef3b3,
+  A200: #fedd6b,
+  A400: #fcd919,
+  A700: #f4a700,
+);
+
+
+$error-palette: (
+  50: #ffe0e0,
+  100: #ffb3b3,
+  200: #F69681,
+  300: #ff4d4d,
+  400: #ff3333,
+  500: #ff1010,
+  600: #e00c0c,
+  700: #c10808,
+  800: #a10404,
+  900: #6e0000,
+  A100: #ff4d4d,
+  A200: #ff3333,
+  A400: #e00000,
+  A700: #c00000,
+);
+
+$orange-palette: (
+  50: #FADABC,
+  100: #ffcf9b,
+  200: #ffb56b,
+  300: #ff9c3b,
+  400: #ff8a48,
+  500: #ff7a33,
+  600: #e65c1b,
+  700: #cc4d1a,
+  800: #b34018,
+  900: #7a2a0f,
+  A100: #ffb86c,
+  A200: #ff9e4e,
+  A400: #ff8a33,
+  A700: #e65c1b,
+);

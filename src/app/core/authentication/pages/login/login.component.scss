@@ -1,0 +1,22 @@
+.bg-gradient {
+  @apply absolute top-0 left-0 flex flex-col justify-center w-full h-full z-20;
+  background: rgb(51,163,170);
+  background: -moz-linear-gradient(180deg, rgba(51,163,170,0.85) 0%, rgba(16,112,118,0.85) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(51,163,170,0.85) 0%, rgba(16,112,118,0.85) 100%);
+  background: linear-gradient(180deg, rgba(51,163,170,0.85) 0%, rgba(16,112,118,0.85) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33a3aa",endColorstr="#107076",GradientType=1);
+}
+
+.bg-image {
+  @apply h-full;
+  background-image: url('src/assets/images/bg_login.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 54%;
+}
+
+.login-form {
+  @apply bg-slate-50 absolute right-0 top-0 h-full z-30 justify-self-end rounded-l-3xl;
+  width: 46.875%;
+}

@@ -1,0 +1,19 @@
+@import "src/assets/styles/colors.scss";
+
+.welcome-container {
+  color: $light-primary-text;
+  line-height: 1.8rem;
+  @apply flex flex-col flex-nowrap pl-28 w-1/2;
+}
+
+.welcome-title {
+  @apply text-5xl font-semibold;
+}
+
+.welcome-paragraph {
+  @apply text-sm text-justify mt-3;
+  line-height: 1.6rem;
+
+  width: 52%;
+
+}
