@@ -5,19 +5,17 @@
     aprovechando al máximo nuestra plataforma.
   </p>
 
-  <div class="mt-6 ">
-    <div>
-      <i></i>
-      <p>Monitoreo integral</p>
+  @for (item of welcomeList; track welcomeList) {
+
+  <div class="mt-6 flex flex-row">
+    <mat-icon class="welcome-list-icon" aria-hidden="false" aria-label="Example home icon" [fontIcon]="item.icon" />
+
+    <div class="flex flex-col ml-3">
+      <p class="welcome-list-text">{{ item.title }}</p>
+      <p class="welcome-list-paragraph">{{ item.description }}</p>
     </div>
-    <p>Administra, monitorea mutiples plantas de forma centralizada</p>
   </div>
 
-  <div>
-    <div>
-      <i></i>
-      <p>Notificaciones en tiempo real</p>
-    </div>
-    <p>Recibi notificaciones en tiempo real sobre las mediciones</p>
-  </div>
+  }
+
 </div>

@@ -1,0 +1,35 @@
+@import 'src/assets/styles/colors.scss';
+@import 'src/assets/styles/functions.scss';
+
+.login-form-container {
+  @apply flex flex-col justify-center items-center w-full h-full;
+}
+
+.login-form-content {
+  max-width: 45% !important;
+}
+
+.login-form-title {
+  @apply text-4xl mb-2 font-semibold pt-2 pb-2;
+}
+
+.login-form-subtitle {
+ @apply text-2xl mb-8 font-medium;
+}
+
+.login-form-politics {
+  @apply text-xs font-normal;
+  color: $dark-secondary-text;
+}
+.login-form-politics span {
+  color: get-color($primary-palette, 500);
+}
+
+.login-form-actions {
+ @apply mb-6 flex flex-row justify-between items-center;
+}
+
+.login-form-actions > p {
+  @apply inline-block font-normal text-sm;
+  color: #47464A;
+}

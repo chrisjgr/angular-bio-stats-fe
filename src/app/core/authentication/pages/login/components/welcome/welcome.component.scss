@@ -1,4 +1,5 @@
 @import "src/assets/styles/colors.scss";
+@import "src/assets/styles/functions.scss";
 
 .welcome-container {
   color: $light-primary-text;
@@ -16,4 +17,17 @@
 
   width: 52%;
 
+}
+
+.welcome-list-text {
+  @apply text-sm text-justify font-medium
+}
+
+.welcome-list-paragraph {
+  @apply text-xs text-justify font-normal
+}
+
+.welcome-list-icon{
+  font-size: 1.5rem;
+  color: get-color($warning-palette, 600)
 }

@@ -1,0 +1,78 @@
+@import 'src/assets/styles/colors.scss';
+@import 'src/assets/styles/functions.scss';
+
+ ::ng-deep .mat-mdc-notch-piece {
+
+}
+
+// * Inputs
+
+::ng-deep .mat-mdc-form-field-flex .mdc-notched-outline .mdc-notched-outline__notch {
+  border-right: none !important;
+  border-left: none !important;
+}
+
+:host ::ng-deep .mdc-text-field--outlined .mdc-notched-outline__leading,
+:host ::ng-deep .mdc-text-field--outlined .mdc-notched-outline__notch,
+:host ::ng-deep .mdc-text-field--outlined .mdc-notched-outline__trailing {
+  border: none !important;
+}
+
+:host ::ng-deep .mdc-text-field--outlined .mdc-text-field--focused .mdc-notched-outline__leading,
+:host ::ng-deep .mdc-text-field--outlined .mdc-text-field--focused .mdc-notched-outline__notch,
+:host ::ng-deep .mdc-text-field--outlined .mdc-text-field--focused .mdc-notched-outline__trailing {
+  border: none !important;
+
+}
+
+
+::ng-deep .mat-mdc-form-field-flex > .mdc-notched-outline {
+  @apply rounded-xl;
+  border: 1px solid #C6C9D2;
+}
+
+::ng-deep .mdc-text-field--focused .mat-mdc-form-field-flex > .mdc-notched-outline {
+  border: 2px solid #C6C9D2;
+}
+
+
+:host ::ng-deep .mdc-text-field--outlined .mdc-floating-label {
+  color: $dark-secondary-text !important;
+}
+
+:host ::ng-deep .mdc-text-field--outlined .mdc-floating-label--float-above {
+  @apply p-1;
+  background: #FBFCFC !important;
+}
+
+:host ::ng-deep .mat-form-field-disabled .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex > .mdc-notched-outline {
+  background-color: #F0F0F0 !important;
+}
+
+:host ::ng-deep .mdc-text-field--outlined .mat-mdc-form-field-infix .mat-mdc-input-element {
+  color: #202020 !important;
+  font-family: Poppins, Roboto, sans-serif;
+  font-size: 14px !important;
+}
+
+// TODO: Modificar par que funcione el estilo del placeholder
+::placeholder ::ng-deep  .mdc-text-field--outlined .mat-mdc-form-field-infix .mat-mdc-input-element {
+  color: #BABEC5 !important;
+  font-family: Poppins, Roboto, sans-serif !important;
+  font-size: 14px !important;
+}
+
+// * Buttons
+:host ::ng-deep .mdc-button {
+  @apply py-6 px-10 rounded-xl text-sm;
+  background: get-color($primary-palette, 500) !important;
+  font-family: Poppins, Roboto, sans-serif;
+  font-size: 14px !important;
+}
+
+// * Icon Buttons
+
+::ng-deep .mdc-icon-button .mat-icon {
+  color: $dark-secondary-text !important;
+}
+
