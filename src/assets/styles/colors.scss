@@ -77,7 +77,7 @@ $warning-palette: (
 $error-palette: (
   50: #ffe0e0,
   100: #ffb3b3,
-  200: #F69681,
+  200: rgba(246,150,129,.5),
   300: #ff4d4d,
   400: #ff3333,
   500: #ff1010,
@@ -92,7 +92,7 @@ $error-palette: (
 );
 
 $orange-palette: (
-  50: #FADABC,
+  50: rgba(250,218,188,.79),
   100: #ffcf9b,
   200: #ffb56b,
   300: #ff9c3b,

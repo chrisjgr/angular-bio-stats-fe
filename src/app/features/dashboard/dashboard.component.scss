@@ -1,0 +1,8 @@
+@import 'src/assets/styles/colors.scss';
+@import 'src/assets/styles/functions.scss';
+
+
+.dashboard-page {
+  @apply h-screen w-screen px-10 py-8;
+  background-color: $background-primary;
+}

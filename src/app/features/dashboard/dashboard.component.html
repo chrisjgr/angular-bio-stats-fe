@@ -1,0 +1,28 @@
+<div class="dashboard-page">
+  <div class="w-full grid grid-cols-4 grid-rows-1 gap-4">
+    @for (item of monitors; track monitors) {
+      <reading-cards
+       [quantity]="item.quantity"
+       [title]="item.title"
+       [className]="item.class"
+       [icon]="item.icon" />
+    }
+  </div>
+
+  <div></div>
+
+  <div class="w-full grid grid-cols-4 grid-rows-2 gap-1">
+
+    @for (item of sensors; track sensors) {
+
+      <sensors-cards
+        [icon]="item.icon"
+        [title]="item.title"
+        [warningAlerts]="item.warningAlerts"
+        [okAlerts]="item.okAlerts"
+        [redAlerts]="item.redAlerts"
+      />
+    }
+
+  </div>
+</div>

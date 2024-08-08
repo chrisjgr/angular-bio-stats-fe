@@ -1,0 +1,67 @@
+@import "src/assets/styles/colors.scss";
+@import "src/assets/styles/functions.scss";
+
+.reading-card {
+  @apply  px-4 py-6 rounded-xl flex flex-row justify-between items-center bg-white;
+  min-width: 290px;
+  max-width: 380px;
+  box-shadow: none !important;
+}
+
+.reading-card-text {
+  @apply flex flex-col;
+}
+
+.reading-card-text p {
+  @apply text-xs font-normal;
+  color: $dark-secondary-text;
+}
+
+.reading-card-text h3 {
+  @apply text-xl font-bold;
+  color: #22242C;
+}
+
+
+.reading-card-icon{
+  @apply p-4 rounded-full flex;
+
+
+ }
+
+.reading-card-icon > .mat-icon {
+  @apply inline-block;
+  font-size: 26px;
+}
+
+.ok {
+  background-color: get-color($success-palette, 50);
+}
+
+.ok > .mat-icon {
+  color: get-color($success-palette, 500);
+}
+
+.warning {
+  background-color: get-color($warning-palette, 50);
+}
+
+.warning > .mat-icon {
+  color: get-color($warning-palette, 500);
+}
+
+.error {
+  background-color: get-color($error-palette, 200);
+}
+
+.error > .mat-icon {
+  color: get-color($error-palette, 500);
+}
+
+.alert {
+  background-color: get-color($orange-palette, 50);
+}
+
+.alert > .mat-icon {
+  color: get-color($orange-palette, 500);
+}

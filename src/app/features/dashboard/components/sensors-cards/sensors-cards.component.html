@@ -1,0 +1,25 @@
+
+<mat-card class="sensors-card">
+  <div class="sensors-card-text">
+    <p>{{ title }}</p>
+
+    <!-- Alerts Icons List Container-->
+    <div class="w-full flex flex-row justify-between items-center mt-2">
+
+      <!-- Alerts Icons Items-->
+      @for (item of alerts; track alerts) {
+        <div class="flex flex-row justify-between items-center justify-center mr-6">
+          <div [class]="'sensor-alerts-icon' + ' ' + item.class">
+            <mat-icon [fontIcon]="item.icon" />
+          </div>
+          <p class="sensors-alert-number">{{ item.alertQuantity }}</p>
+        </div>
+      }
+    </div>
+  </div>
+
+  <!-- Sensors Icons-->
+  <div [class]="'sensors-card-icon'">
+    <mat-icon [fontIcon]="fontIcon[icon]" />
+  </div>
+</mat-card>

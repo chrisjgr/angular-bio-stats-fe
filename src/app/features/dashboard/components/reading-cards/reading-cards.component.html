@@ -1,0 +1,11 @@
+
+<mat-card class="reading-card">
+  <div class="reading-card-text">
+    <p>{{ title }}</p>
+    <h3>{{ quantity }}</h3>
+  </div>
+
+  <div [class]="'reading-card-icon' + ' ' + className">
+    <mat-icon [fontIcon]="fontIcon[icon]" />
+  </div>
+</mat-card>
