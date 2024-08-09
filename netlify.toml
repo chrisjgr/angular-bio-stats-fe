@@ -1,5 +1,6 @@
 
+
 [[redirects]]
   from = "/*"
-  to = "dist/angular-bio-stats-fe/browser/index.html"
+  to = "/index.html"
   status = 200
