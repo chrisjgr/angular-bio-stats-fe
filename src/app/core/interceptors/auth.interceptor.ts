@@ -1,12 +1,12 @@
 import { HttpInterceptorFn } from "@angular/common/http";
-import { Inject } from "@angular/core";
+import { inject } from "@angular/core";
 import { TokenService } from "@core/services/token.service";
 import { environment } from "@environments/environment";
 import { CookieService } from "ngx-cookie-service";
 
 // TODO: TEST
 export const authInterceptor: HttpInterceptorFn = (req, next) => {
-    const cookieService = Inject(CookieService);
+    const cookieService = inject(CookieService);
     const tokenService = new TokenService(cookieService);
     const token: string = tokenService.getToken();
 

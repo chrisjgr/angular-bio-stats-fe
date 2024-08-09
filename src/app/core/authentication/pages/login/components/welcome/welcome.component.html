@@ -5,7 +5,7 @@
     aprovechando al máximo nuestra plataforma.
   </p>
 
-  @for (item of welcomeList; track welcomeList) {
+  @for (item of welcomeList; track item.title + item.icon) {
 
   <div class="mt-6 flex flex-row">
     <mat-icon class="welcome-list-icon" aria-hidden="false" aria-label="list icon" [fontIcon]="item.icon" />

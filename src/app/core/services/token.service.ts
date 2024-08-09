@@ -1,7 +1,6 @@
 /* eslint-disable class-methods-use-this */
 import { Injectable } from "@angular/core";
-import { JwtPayloadInterface } from "@core/models/jwtPayload.interface";
-import { CookieService } from "ngx-cookie-service";
+import { CookieService } from 'ngx-cookie-service';
 
 @Injectable({
     providedIn: "root",
@@ -9,7 +8,7 @@ import { CookieService } from "ngx-cookie-service";
 export class TokenService {
 
   constructor(
-    private readonly  cookieService: CookieService
+    private cookieService: CookieService
   ) {}
 
     saveToken(token: string): void {

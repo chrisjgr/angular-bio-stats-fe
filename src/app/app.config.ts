@@ -15,8 +15,8 @@ export const appConfig: ApplicationConfig = {
         provideAnimationsAsync(),
         provideRouter(routes),
         provideHttpClient(withInterceptors([authInterceptor])),
+        CookieService,
         AuthService,
         TokenService,
-        CookieService,
     ]
 };

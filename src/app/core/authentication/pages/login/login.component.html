@@ -8,6 +8,8 @@
   <div class="bg-image"></div>
 
   <div class="login-form">
-    <login-form />
+    <login-form
+      (loginSubmitted)="handleLoginSubmitted($event)"
+    />
   </div>
 </div>
